@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Modern_Campus:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Modern_Campus</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Modern_Campus-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Modern_Campus:war exploded" />
+    </root>
+  </artifact>
+</component>

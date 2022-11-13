@@ -5,7 +5,7 @@ import com.bstevary.modern_campus.common.DatabaseInfo;
 import java.sql.*;
 
 public class LoginDao {
-    public static String PamSes = null;
+
     boolean status = false;
     DatabaseInfo Database = new DatabaseInfo();
     public void loadDriver(String dbDriver) {
@@ -39,11 +39,11 @@ public class LoginDao {
 
     private boolean validator(loginBean loginBean,  String sql) {
             loadDriver(Database.getDbDriver());
-            Connection con = getConnection();
+            Connection connection = getConnection();
             PreparedStatement ps;
 
         try {
-                ps = con.prepareStatement(sql);
+                ps = connection.prepareStatement(sql);
                 ps.setString(1,loginBean.getUsername());
                 ps.setString(2, loginBean.getPassword());
                 ResultSet rs = ps.executeQuery();

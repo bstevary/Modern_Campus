@@ -25,11 +25,7 @@
                     <input type="password" name="Password" id="Password">
                 </div>
 
-               >
-
-
-
-                <div class="form_action--button">
+             <div class="form_action--button">
                     <input type="submit" value="Login">
                     <input type="reset" value="Clear">
                 </div>

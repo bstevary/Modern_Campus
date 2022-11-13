@@ -13,10 +13,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Modern_Campus" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.hibernate.orm:hibernate-core:6.0.0.Final" />
-          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:3.0.2" />
-        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/Modern_Campus-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />

@@ -1,5 +1,6 @@
 package com.bstevary.modern_campus.services.login;
 
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -10,13 +11,8 @@ import java.io.IOException;
 
 @WebServlet(name = "login", value = "/login")
 public class login extends HttpServlet {
-
-
-    public void init() {
-
-    }
-
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+      @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         String UserName = request.getParameter("UserName").toUpperCase();
         String Password = request.getParameter("Password");
 
@@ -37,7 +33,7 @@ public class login extends HttpServlet {
 
                 session.setAttribute("UserName",UserName);
 
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("staff.jsp");
             }
             else
             {
@@ -52,9 +48,9 @@ public class login extends HttpServlet {
             {
                 request.setAttribute("status","success");
 
-                session.setAttribute("UserName",LoginDao.PamSes);
+                session.setAttribute("UserName",UserName);
 
-                response.sendRedirect("./student/home.jsp");
+                response.sendRedirect("/student/student.jsp");
             }
             else
             {
@@ -65,11 +61,5 @@ public class login extends HttpServlet {
 
         }
 
-
-
-
     }
-
-    public void destroy() {
-    }
-}
+   }

@@ -10,34 +10,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc73d55-a671-4a5a-8eee-3309f0bb8271" name="Changes" comment="&#10;added dependencies jdbc driver">
+    <list default="true" id="7dc73d55-a671-4a5a-8eee-3309f0bb8271" name="Changes" comment="&#10;Refactor to appreciate beans injection in microservices">
       <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.jpb/persistence-units.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CourseBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CurriculmBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/DepartmentBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/Fee_ReceiptBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/SchoolBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/TranscriptBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/UnitBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/config/Database.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/controller/LoginFilter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/controller/RoleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Curriculm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Fee_Receipt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/School.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Transcript.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Unit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/dao/FeeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/dao/StaffDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/dao/TranscriptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/FeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/StaffDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/TranscriptDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a054e4d9-567b-4b0e-96ae-4008f0c6087e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a054e4d9-567b-4b0e-96ae-4008f0c6087e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/common/DatabaseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/common/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/common/DatabaseInfo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/manServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/loginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/loginBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/loginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/loginBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,8 +336,16 @@
       <workItem from="1668327043694" duration="108000" />
       <workItem from="1668327186569" duration="11502000" />
       <workItem from="1668396692014" duration="1894000" />
-      <workItem from="1668405987472" duration="1148000" />
+      <workItem from="1668405987472" duration="3146000" />
     </task>
+    <task id="LOCAL-00001" summary="&#10;Refactor to appreciate beans injection in microservices">
+      <created>1668410700081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668410700081</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +364,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="&#10;Refactor to appreciate beans injection in microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Refactor to appreciate beans injection in microservices" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,5 +1,8 @@
-package com.bstevary.modern_campus.services.login;
+package com.bstevary.modern_campus.interfaces.servlets;
 
+import com.bstevary.modern_campus.config.Database;
+import com.bstevary.modern_campus.dao.LoginDao;
+import com.bstevary.modern_campus.beans.loginBean;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -25,7 +28,7 @@ public class login extends HttpServlet {
         HttpSession session = request.getSession();
 
         LoginDao loginDao= new LoginDao();
-
+          Database database =new Database();
         if (UserName.startsWith("PF")){
             if(loginDao.validateStaff(loginBean))
             {

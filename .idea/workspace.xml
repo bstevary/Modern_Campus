@@ -10,17 +10,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc73d55-a671-4a5a-8eee-3309f0bb8271" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/manServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.30.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Modern_Campus_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Modern_Campus_war_exploded.xml" afterDir="false" />
+    <list default="true" id="7dc73d55-a671-4a5a-8eee-3309f0bb8271" name="Changes" comment="&#10;added dependencies jdbc driver">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jpb/persistence-units.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/controller/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/controller/RoleFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Curriculm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Fee_Receipt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Transcript.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Unit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/dao/FeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/dao/StaffDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/dao/TranscriptDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a054e4d9-567b-4b0e-96ae-4008f0c6087e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a054e4d9-567b-4b0e-96ae-4008f0c6087e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/entities/Users.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/security/LoginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/common/DatabaseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/common/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/manServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/login3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/txt.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/loginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/login/loginBean.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +48,23 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
-        <option value="master" />
+        <option value="main" />
       </list>
     </option>
   </component>
@@ -65,31 +86,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/bstevary/Documents/git/bitbucket/lib/mysql-connector-java-8.0.30.jar",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bstevary/Documents/git/bitbucket/lib/mysql-connector-java-8.0.30.jar&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PLAIN_TEXT"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.bstevary.modern_campus.services.login" />
@@ -312,6 +333,8 @@
       <workItem from="1668320333367" duration="3245000" />
       <workItem from="1668327043694" duration="108000" />
       <workItem from="1668327186569" duration="11502000" />
+      <workItem from="1668396692014" duration="1894000" />
+      <workItem from="1668405987472" duration="1148000" />
     </task>
     <servers />
   </component>

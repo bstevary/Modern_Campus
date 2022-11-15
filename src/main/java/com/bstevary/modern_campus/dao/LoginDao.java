@@ -1,11 +1,13 @@
 package com.bstevary.modern_campus.dao;
 
 import com.bstevary.modern_campus.beans.loginBean;
-import com.bstevary.modern_campus.config.Database;
 
 import java.sql.*;
 
 public class LoginDao {
+    public LoginDao(com.bstevary.modern_campus.config.Database database) {
+        Database = database;
+    }
 
     boolean status = false;
     com.bstevary.modern_campus.config.Database Database;
@@ -24,7 +26,7 @@ public class LoginDao {
 
     private boolean validator(loginBean loginBean,  String sql) {
             Database.loadDriver();
-            Connection connection = Database.getConnection();
+            Connection connection = Database.getConnectionOnly();
             PreparedStatement ps;
 
         try {

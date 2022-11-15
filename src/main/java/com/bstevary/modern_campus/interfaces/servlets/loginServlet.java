@@ -12,31 +12,31 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name = "login", value = "/login")
-public class login extends HttpServlet {
+@WebServlet(name = "loginServlet", value = "/loginServlet")
+public class loginServlet extends HttpServlet {
       @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         String UserName = request.getParameter("UserName").toUpperCase();
         String Password = request.getParameter("Password");
 
-        System.out.println("in servlet");
+
 
         loginBean loginBean = new loginBean();
-                    loginBean.setUsername(UserName);
-                    loginBean.setPassword(Password);
+        loginBean.setUsername(UserName);
+        loginBean.setPassword(Password);
 
-        HttpSession session = request.getSession();
 
-        LoginDao loginDao= new LoginDao();
           Database database =new Database();
+        LoginDao loginDao= new LoginDao(database);
+
         if (UserName.startsWith("PF")){
             if(loginDao.validateStaff(loginBean))
             {
                 request.setAttribute("status","success");
-
+                HttpSession session = request.getSession();
                 session.setAttribute("UserName",UserName);
 
-                response.sendRedirect("staff.jsp");
+                response.sendRedirect("staff/staff.jsp");
             }
             else
             {
@@ -49,11 +49,13 @@ public class login extends HttpServlet {
             System.out.println("students");
             if(loginDao.validateStudent(loginBean))
             {
+                //append session.setAttribute("list", list);
+                HttpSession session = request.getSession();
                 request.setAttribute("status","success");
 
                 session.setAttribute("UserName",UserName);
 
-                response.sendRedirect("/student/student.jsp");
+                response.sendRedirect("student/student.jsp");
             }
             else
             {

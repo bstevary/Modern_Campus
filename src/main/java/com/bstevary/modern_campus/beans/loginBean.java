@@ -1,12 +1,9 @@
 package com.bstevary.modern_campus.beans;
 
-import com.bstevary.modern_campus.beans.Staff;
-import com.bstevary.modern_campus.beans.Student;
-
 public class loginBean {
 
-    private Student Student_Data ;
-    private Staff Staff_Data;
+    private StudentBean student_Bean_Data;
+    private StaffBean staff_Bean_Data;
     private String username;
     private String password;
 

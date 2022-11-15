@@ -35,13 +35,29 @@ public class Database {
         }
     }
 
-    public Connection getConnection() {
-        Connection con = null ;
+    public Connection getConnectionOnly() {
+        Connection connection = null ;
         try {
-            con = DriverManager.getConnection(dbUrl,dbUname,dbPassword);
+            connection = DriverManager.getConnection(dbUrl,dbUname,dbPassword);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return con;
+        return connection;
     }
+
+    public Connection getConnection() {
+        Connection connection = null;
+        try {
+            Class.forName(dbDriver);
+            connection = DriverManager.getConnection(dbUrl,dbUname,dbPassword);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return connection;
+    }
+
 }

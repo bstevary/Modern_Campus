@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDao {
-       private static final String INSERT_USERS_SQL = "INSERT INTO Student" + "  (Reg_No, F_Name, S_Name, L_Name, D_O_B, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type) VALUES "
-            + " (?, ?, ?,?, ?, ?,?, ?, ?,?, ?, ?);";
+       private static final String INSERT_USERS_SQL = "INSERT INTO Student" + "  (Reg_No, F_Name, S_Name, L_Name, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type) VALUES "
+            + " (?, ?, ?,?, ?, ?, ?, ?,?, ?, ?);";
 
-    private static final String SELECT_USER_BY_ID = "select Reg_No, F_Name, S_Name, L_Name, D_O_B, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type from Student where id =?";
+    private static final String SELECT_USER_BY_ID = "select Reg_No, F_Name, S_Name, L_Name, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type from Student where reg_No =?";
     private static final String SELECT_ALL_USERS = "select * from Student";
-    private static final String DELETE_USERS_SQL = "delete from Student where id = ?;";
-    private static final String UPDATE_USERS_SQL = "update Student set name Reg_No= ?, F_Name= ?, S_Name= ?, L_Name= ?, D_O_B= ?, Email= ?, Cohort_ID= ?, Course_ID= ?, N_ID= ?, Contacts= ?, Status= ?, Type= ? where id = ?;";
+    private static final String DELETE_USERS_SQL = "delete from Student where reg_No = ?;";
+    private static final String UPDATE_USERS_SQL = "update Student set name Reg_No= ?, F_Name= ?, S_Name= ?, L_Name= ?, Email= ?, Cohort_ID= ?, Course_ID= ?, N_ID= ?, Contacts= ?, Status= ?, Type= ? where reg_No = ?;";
 
     public StudentDao() {
     }
@@ -29,7 +29,6 @@ public class StudentDao {
             preparedStatement.setString(2, user.getF_Name());
             preparedStatement.setString(3, user.getS_Name());
             preparedStatement.setString(4, user.getL_Name());
-            preparedStatement.setString(5, user.getD_O_B());
             preparedStatement.setString(6, user.getEmail());
             preparedStatement.setString(7, user.getCohort_ID());
             preparedStatement.setString(8, user.getCourse_ID());
@@ -61,7 +60,6 @@ public class StudentDao {
                 String F_Name = rs.getString("F_Name");
                 String S_Name = rs.getString("S_Name");
                 String L_Name = rs.getString("L_Name");
-                String D_O_B = rs.getString("D_O_B");
                 String country = rs.getString("S_Name");
                 String Email = rs.getString("Email");
                 String Cohort_ID = rs.getString("Cohort_ID");
@@ -70,7 +68,7 @@ public class StudentDao {
                 String Contacts = rs.getString("Contacts");
                 String Status = rs.getString("S_Name");
                 String Type = rs.getString("Type");
-                user = new StudentBean( Reg_No, F_Name, S_Name, L_Name, D_O_B, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type);
+                user = new StudentBean( Reg_No, F_Name, S_Name, L_Name, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type);
             }
         } catch (SQLException e) {
             printSQLException(e);
@@ -90,15 +88,13 @@ public class StudentDao {
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
             ResultSet rs = preparedStatement.executeQuery();
-
+//Reg_No, F_Name, S_Name, L_Name, D_O_B, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type)
             // Step 4: Process the ResultSet object.
             while (rs.next()) {
                 String Reg_No = rs.getString("Reg_No");
                 String F_Name = rs.getString("F_Name");
                 String S_Name = rs.getString("S_Name");
                 String L_Name = rs.getString("L_Name");
-                String D_O_B = rs.getString("D_O_B");
-                String country = rs.getString("S_Name");
                 String Email = rs.getString("Email");
                 String Cohort_ID = rs.getString("Cohort_ID");
                 String Course_ID = rs.getString("Course_ID");
@@ -106,7 +102,7 @@ public class StudentDao {
                 String Contacts = rs.getString("Contacts");
                 String Status = rs.getString("S_Name");
                 String Type = rs.getString("Type");
-                users.add(new StudentBean(Reg_No, F_Name, S_Name, L_Name, D_O_B, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type));
+                users.add(new StudentBean(Reg_No, F_Name, S_Name, L_Name, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type));
             }
         } catch (SQLException e) {
             printSQLException(e);
@@ -133,7 +129,6 @@ public class StudentDao {
             statement.setString(2, user.getF_Name());
             statement.setString(3, user.getS_Name());
             statement.setString(4, user.getL_Name());
-            statement.setString(5, user.getD_O_B());
             statement.setString(6, user.getEmail());
             statement.setString(7, user.getCohort_ID());
             statement.setString(8, user.getCourse_ID());

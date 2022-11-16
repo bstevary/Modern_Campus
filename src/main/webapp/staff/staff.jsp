@@ -10,6 +10,6 @@
   <br/>
   <h1><%= "I Knew you are admin" %> </h1>
   <br/>
-  <a href="../user-list.jsp">action</a>
+  <a href="user-list.jsp">action</a>
 </body>
 </html>

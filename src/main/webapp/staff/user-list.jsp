@@ -53,7 +53,9 @@
         <th>N_ID</th>
         <th>Contacts</th>
         <th>Status</th>
-        <th>Type</th>
+        <th>T</th>
+
+
       </tr>
       </thead>
       <tbody>
@@ -61,20 +63,19 @@
       <c:forEach var="user" items="${listUser}">
 
         <tr>
-          <td><c:out value="${user.Reg_No}" /></td>
-          <td><c:out value="${user.F_Name}" /></td>
-          <td><c:out value="${user.S_Name}" /></td>
-          <td><c:out value="${user.L_Name}" /></td>
-          <td><c:out value="${user.D_O_B}" /></td>
-          <td><c:out value="${user.Email}" /></td>
-          <td><c:out value="${user.Cohort_ID}" /></td>
-          <td><c:out value="${user.Course_ID}" /></td>
-          <td><c:out value="${user.Contacts}" /></td>
-          <td><c:out value="${user.Status}" /></td>
-          <td><c:out value="${user.Type}" /></td>
-          <td><a href="edit?id=<c:out value='${user.Reg_No}' />">Edit</a>
-            &nbsp;&nbsp;&nbsp;&nbsp; <a
-                    href="delete?id=<c:out value='${user.Reg_No}' />">Delete</a></td>
+          <td><c:out value="${user.reg_No}" /></td>
+          <td><c:out value="${user.f_Name}" /></td>
+          <td><c:out value="${user.s_Name}" /></td>
+          <td><c:out value="${user.l_Name}" /></td>
+          <td><c:out value="${user.d_O_B}" /></td>
+          <td><c:out value="${user.email}" /></td>
+          <td><c:out value="${user.cohort_ID}" /></td>
+          <td><c:out value="${user.course_ID}" /></td>
+          <td><c:out value="${user.contacts}" /></td>
+          <td><c:out value="${user.status}" /></td>
+          <td><c:out value="${user.type}" /></td>
+          <td><a href="edit?reg_No=<c:out value='${user.reg_No}' />">Edit</a>
+            <a href="delete?reg_No=<c:out value='${user.reg_No}' />">Delete</a></td>
         </tr>
       </c:forEach>
 

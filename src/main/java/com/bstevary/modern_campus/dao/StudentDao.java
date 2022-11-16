@@ -20,7 +20,7 @@ public class StudentDao {
     }
 
   Database database = new Database();
-    public void insertUser(StudentBean user) throws SQLException {
+    public void insertStudent(StudentBean user) throws SQLException {
         System.out.println(INSERT_USERS_SQL);
         // try-with-resource statement will auto close the connection.
         try (Connection connection = database.getConnection();
@@ -156,5 +156,8 @@ public class StudentDao {
                 }
             }
         }
+    }
+
+    public void insertUser(StudentBean newUser) {
     }
 }

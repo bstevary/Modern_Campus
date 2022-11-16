@@ -10,35 +10,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc73d55-a671-4a5a-8eee-3309f0bb8271" name="Changes" comment="&#10;login  working and authentication solved">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/CourseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/CurriculmDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/Fee_ReceiptDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/UnitDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/StudentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/staff/user-form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/student/Carriculum.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/student/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/student/report.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/student/transcript.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="7dc73d55-a671-4a5a-8eee-3309f0bb8271" name="Changes" comment="Integration part one not finished update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/privilleges/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/CodServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/DeanServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/RegistrarServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/css/style4staff.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/choose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/full-image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/home-icon-silhouette.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/money.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/resume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/shutdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/survey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/zoom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/staff/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/student/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CourseBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CourseBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CurriculmBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CurriculmBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/DepartmentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/DepartmentBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/Fee_ReceiptBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/Fee_ReceiptBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/SchoolBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/SchoolBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/StaffBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/StaffBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/StudentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/StudentBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/TranscriptBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/TranscriptBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/UnitBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/UnitBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/FeeDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/StaffDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/StaffDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/CurriculmDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/CurriculmDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/TranscriptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/TranscriptDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/SupperServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/SupperServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/loginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/Test.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index4.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/staff/staff.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/staff.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/user-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/staff/user-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/staff/user-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/Carriculum.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/Carriculum.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/report.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/report.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/transcript.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/transcript.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +62,8 @@
       <list>
         <option value="Interface" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,7 +83,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/webapp/staff/user-list.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/user-list.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -99,7 +111,7 @@
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/bstevary/Documents/git/github/private/ideas/Modern_Campus/src/main/webapp/WEB-INF/lib",
+    "last_opened_file_path": "/home/bstevary/Documents/git/github/private/ideas/Modern_Campus/src/main/webapp/student",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
@@ -121,18 +133,18 @@
       <recent name="com.bstevary.modern_campus.services.login" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/student" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/staff" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/all" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/src/main/webapp/all/js" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/all/css" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bin" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/all/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/staff" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/all/img" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/all/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/staff" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bin" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/student" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
@@ -196,20 +208,6 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="DOMAIN" value="" />
-        <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -425,7 +423,8 @@
       <workItem from="1668444356318" duration="605000" />
       <workItem from="1668450025843" duration="1965000" />
       <workItem from="1668452671575" duration="4570000" />
-      <workItem from="1668482174860" duration="62123000" />
+      <workItem from="1668482174860" duration="64617000" />
+      <workItem from="1668576726533" duration="11525000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;Refactor to appreciate beans injection in microservices">
       <created>1668410700081</created>
@@ -448,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668508968275</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Integration part one not finished update">
+      <created>1668574516945</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668574516945</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +475,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="&#10;Refactor to appreciate beans injection in microservices" />
     <MESSAGE value="&#10;login  working and authentication solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;login  working and authentication solved" />
+    <MESSAGE value="Integration part one not finished update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integration part one not finished update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-  <title>User Management Application</title>
+  <title>Student Management Application</title>
   <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -15,13 +15,13 @@
   <nav class="navbar navbar-expand-md navbar-dark"
        style="background-color: blue">
     <div>
-      <a href="https://www.xadmin.net" class="navbar-brand"> User
+      <a href="https://www.xadmin.net" class="navbar-brand"> Students
         Management  </a>
     </div>
 
     <ul class="navbar-nav">
       <li><a href="<%=request.getContextPath()%>/list"
-             class="nav-link">Users</a></li>
+             class="nav-link">Students</a></li>
     </ul>
   </nav>
 </header>
@@ -31,29 +31,30 @@
   <!-- <div class="alert alert-success" *ngIf='message'>{{message}}</div> -->
 
   <div class="container">
-    <h3 class="text-center">List of Users</h3>
+    <h3 class="text-center">List of Students</h3>
     <hr>
     <div class="container text-left">
 
       <a href="<%=request.getContextPath()%>/new" class="btn btn-success">Add
-        New User</a>
+        New Students</a>
     </div>
     <br>
     <table class="table table-bordered">
       <thead>
       <tr>
+        <th>N_ID</th>
         <th>Reg_No</th>
+
         <th>F_Name</th>
         <th>S_Name</th>
         <th>L_Name</th>
-        <th>D_O_B</th>
-        <th>Email</th>
-        <th>Cohort_ID</th>
-        <th>Course_ID</th>
-        <th>N_ID</th>
         <th>Contacts</th>
-        <th>Status</th>
-        <th>T</th>
+        <th>Email</th>
+
+        <th>Cohort</th>
+        <th>Course</th>
+        <th>Type</th>
+        <th>Action</th>
 
 
       </tr>
@@ -67,8 +68,7 @@
           <td><c:out value="${user.f_Name}" /></td>
           <td><c:out value="${user.s_Name}" /></td>
           <td><c:out value="${user.l_Name}" /></td>
-          <td><c:out value="${user.d_O_B}" /></td>
-          <td><c:out value="${user.email}" /></td>
+           <td><c:out value="${user.email}" /></td>
           <td><c:out value="${user.cohort_ID}" /></td>
           <td><c:out value="${user.course_ID}" /></td>
           <td><c:out value="${user.contacts}" /></td>

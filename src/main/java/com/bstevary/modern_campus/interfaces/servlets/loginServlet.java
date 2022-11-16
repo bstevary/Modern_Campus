@@ -36,7 +36,7 @@ public class loginServlet extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("UserName",UserName);
 
-                response.sendRedirect("staff/staff.jsp");
+                response.sendRedirect("staff/index.html");
             }
             else
             {
@@ -55,7 +55,7 @@ public class loginServlet extends HttpServlet {
 
                 session.setAttribute("UserName",UserName);
 
-                response.sendRedirect("student/student.jsp");
+                response.sendRedirect("student/index.html");
             }
             else
             {

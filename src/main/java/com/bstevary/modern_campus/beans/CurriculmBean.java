@@ -1,14 +1,31 @@
 package com.bstevary.modern_campus.beans;
 
 public class CurriculmBean {
-    protected String Caricullum_ID, Semester, Yrs_O_Stdy, Unit_ID;
+    private String  Course_ID, Semester, Yrs_O_Stdy, Unit_ID;
 
-    public String getCaricullum_ID() {
-        return Caricullum_ID;
+    public CurriculmBean(String course_ID, String semester, String yrs_O_Stdy, String unit_ID) {
+        Course_ID = course_ID;
+        Semester = semester;
+        Yrs_O_Stdy = yrs_O_Stdy;
+        Unit_ID = unit_ID;
     }
 
-    public void setCaricullum_ID(String caricullum_ID) {
-        Caricullum_ID = caricullum_ID;
+    public CurriculmBean(String course_ID, String semester, String yrs_O_Stdy) {
+        Course_ID = course_ID;
+        Semester = semester;
+        Yrs_O_Stdy = yrs_O_Stdy;
+    }
+
+    public CurriculmBean(String unit_ID) {
+        Unit_ID = unit_ID;
+    }
+
+    public String getCourse_ID() {
+        return Course_ID;
+    }
+
+    public void setCourse_ID(String course_ID) {
+        Course_ID = course_ID;
     }
 
     public String getSemester() {
@@ -32,13 +49,6 @@ public class CurriculmBean {
     }
 
     public void setUnit_ID(String unit_ID) {
-        Unit_ID = unit_ID;
-    }
-
-    public CurriculmBean(String caricullum_ID, String semester, String yrs_O_Stdy, String unit_ID) {
-        Caricullum_ID = caricullum_ID;
-        Semester = semester;
-        Yrs_O_Stdy = yrs_O_Stdy;
         Unit_ID = unit_ID;
     }
 }

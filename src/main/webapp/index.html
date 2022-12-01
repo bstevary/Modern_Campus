@@ -1,143 +1,195 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-
-    <link rel="stylesheet" href="all/style.css">
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>LearnEd</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="all/css/home_style.css">
+	<script type="text/javascript" src="all/js/home_script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
 </head>
-
 <body>
-
-   
-    <header>
-         <section id="topbar" class="mb-2 mb-lg-0 mb-sm-0 d-none d-lg-flex align-items-center pt-2 pb-2 bg-primary text-white topbar-transparent">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6   text-start">
-             <span class="px-3"><i class="bi bi-phone "></i> MODERN CAMPUS -2022  </span>
-          <i class="bi bi-clock"></i> Mon-FRI: 08:00 AM - 05:00 PM
-
-        </div>
-      </section>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <h2 class="fw-bold  mb-2 mb-lg-0 mb-sm-0">MODERN CAMPUS</h2>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="bi bi-list"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Departments</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">School</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Staff</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav mb-2 mb-lg-0 action-menu">
-                        <li class="nav-item">
-                            <a class="nav-link " href="login.jsp">
-                                <i class="bi bi-person "></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
- 
-
-
-    <div id="carouselExampleCaptions" class="carousel slide mb-3" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="img-fluid w-100 h-100 overflow-hidden"
-                    src="all/img/full-image1.jpg"
-                    class="d-block w-100" alt="...">
-                <div class="carousel-caption d-block">
-                    <h5>MODERN_CAMPUS</h5>
-                    <p>LEARN IN A CONDUCIVE ENVIRONMENT.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="img-fluid w-100 h-100 overflow-hidden"
-                    src="https://cdn.pixabay.com/photo/2017/02/05/00/08/graduation-2038864_960_720.jpg"
-                    class="d-block w-100" alt="...">
-                <div class="carousel-caption d-block">
-                    <h5>MODERN CAMPUS</h5>
-                    <p>LEARN IN A CONDUCIVE ENVIRONMENT.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="img-fluid w-100 h-100 overflow-hidden"
-                    src="https://cdn.pixabay.com/photo/2017/09/08/00/37/friend-2727305_960_720.jpg"
-                    class="d-block w-100" alt="...">
-                <div class="carousel-caption d-block">
-                    <h5>MODERN CAMPUS</h5>
-                    <p>LEARN IN A CONDUCIVE ENVIRONMENT</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+				<li><a href="#last">Footer</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.jsp">Login</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>The beautiful thing about learning is that nobody can take it away from you</p>
+				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
+				<div class="play">
+					<img src="images/icon/play.png" alt="play"><span><a href="https://www.youtube.com" target="_blank">Watch Now</a></span>
+				</div>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/roshan.jpeg" alt="Username">
+				<p>roshank9419</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+				<li><a href="#last">Footer</a></li>
+				
+			</ul>
+		</div>
+	</header>
 
 
 
 
-    <main id="main">
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>What you think about us ?</h2>
+					<p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research.<br> Educational website can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the StudentSRV, especially in today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we can make learning more easier and in a interesting way.</p>
+				</div>
+		</div>
+	</div>
 
-       
-        <!-- Footer -->
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+
+<!-- PORTFOLIO -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Portfolio</p></center>
+		<div class="content">
+			<p>
+				“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”
+			</p>
+		</div>
+	</div>
+	<div class="extra">
+		<p>We're increasing this data every year</p>
+		<div class="smbox">
+		<span><center><div class="data">154</div><div class="det">Enrolled Students</div></center></span>
+		<span><center><div class="data">62</div><div class="det">Total Courses</div></center></span>
+		<span><center><div class="data">56</div><div class="det">Placed Students</div></center></span>
+		<span><center><div class="data">27</div><div class="det">Total Projects</div></center></span>
+		</div>
+	</div>
+
+
+<!-- TEAM -->
+	<div class="diffSection" id="team_section">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p></center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="images/creator/roshan1.jpeg"></center>
+				<center><div class="card-title">Stevary Bosuben</div>
+				<div id="detail">
+					<p>“ You can teach a StudentSRV a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives “</p>
+					<div class="duty"></div>
+					<a href="https://www.linkedin.com/in/roshan-kumar-a18b76179/" target="_blank"><button class="btn-roshan">Follow +</button></a>
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/creator/roshan2.jpeg"></center>
+				<center><div class="card-title">Roshan Kumar</div>
+				<div id="detail">
+					<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p>
+					<div class="duty"></div>
+					<a href="https://www.linkedin.com/in/bstevary/" target="_blank"><button class="btn-akhil">Follow +</button></a>
+				</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div id="last" class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo - Copy.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2022 Created By Stevary Bosuben, StepLaps Software Services All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> Kisii  University<br>Kisii,Kenya</p><br>
+				<p><img src="images/icon/phone.png"> +254-112-446-045<br><img src="images/icon/mail.png">&nbsp; bstevary@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
 
 </body>
-
 </html>

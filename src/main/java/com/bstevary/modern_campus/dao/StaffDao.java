@@ -1,5 +1,6 @@
 package com.bstevary.modern_campus.dao;
 
+import com.bstevary.modern_campus.beans.CourseBean;
 import com.bstevary.modern_campus.beans.StaffBean;
 import com.bstevary.modern_campus.config.Database;
 

@@ -1,7 +1,13 @@
 package com.bstevary.modern_campus.beans;
 
 public class CourseBean {
-    protected String Course_ID, Course_Name, Dept_ID, Caricullum_ID;
+    protected String Course_ID, Course_Name, Dept_ID;
+
+    public CourseBean(String course_ID, String course_Name, String dept_ID) {
+        Course_ID = course_ID;
+        Course_Name = course_Name;
+        Dept_ID = dept_ID;
+    }
 
     public String getCourse_ID() {
         return Course_ID;
@@ -25,20 +31,5 @@ public class CourseBean {
 
     public void setDept_ID(String dept_ID) {
         Dept_ID = dept_ID;
-    }
-
-    public String getCaricullum_ID() {
-        return Caricullum_ID;
-    }
-
-    public void setCaricullum_ID(String caricullum_ID) {
-        Caricullum_ID = caricullum_ID;
-    }
-
-    public CourseBean(String course_ID, String course_Name, String dept_ID, String caricullum_ID) {
-        Course_ID = course_ID;
-        Course_Name = course_Name;
-        Dept_ID = dept_ID;
-        Caricullum_ID = caricullum_ID;
     }
 }

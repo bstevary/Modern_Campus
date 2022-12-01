@@ -37,98 +37,99 @@
 <div class="container col-md-5">
   <div class="card">
     <div class="card-body">
-      <c:if test="${user != null}">
+      <c:if test="${StudentBean != null}">
       <form action="update" method="post">
         </c:if>
-        <c:if test="${user == null}">
+        <c:if test="${StudentBean == null}">
         <form action="insert" method="post">
           </c:if>
 
           <caption>
             <h2>
-              <c:if test="${user != null}">
-                Edit User
+              <c:if test="${StudentBean != null}">
+                Edit Student
               </c:if>
-              <c:if test="${user == null}">
-                Add New User
+              <c:if test="${StudentBean == null}">
+                Add New Student
               </c:if>
             </h2>
           </caption>
 
-          <c:if test="${user != null}">
-            <input type="hidden" name="Reg_No" value="<c:out value='${user.reg_No}' />" />
-          </c:if>
             <fieldset class="form-group">
-              <label>User F_Name</label> <input type="text"
-                                                value="<c:out value='${user.f_Name}' />" class="form-control"
-                                                name="Reg_No" required="required">
+              <label>Student Reg_No</label> <input type="text"
+                                                value="<c:out value='${StudentBean.reg_No}' />" class="form-control"
+                                                name="reg_No" required="required">
             </fieldset>
 
           <fieldset class="form-group">
-            <label>User F_Name</label> <input type="text"
-                                            value="<c:out value='${user.f_Name}' />" class="form-control"
-                                            name="F_Name" required="required">
+            <label>Student F_Name</label> <input type="text"
+                                            value="<c:out value='${StudentBean.f_Name}' />" class="form-control"
+                                            name="f_Name" required="required">
           </fieldset>
 
           <fieldset class="form-group">
-            <label>User S_Name</label> <input type="text"
-                                             value="<c:out value='${user.s_Name}' />" class="form-control"
-                                             name="S_Name">
+            <label>Student S_Name</label> <input type="text"
+                                                 value="<c:out value='${StudentBean.s_Name}' />" class="form-control"
+                                                 name="s_Name">
           </fieldset>
 
           <fieldset class="form-group">
-            <label>User L_Name</label> <input type="text"
-                                               value="<c:out value='${user.l_Name}' />" class="form-control"
-                                               name="L_Name">
+            <label>Student L_Name</label> <input type="text"
+                                               value="<c:out value='${StudentBean.l_Name}' />" class="form-control"
+                                               name="l_Name">
           </fieldset>
 
 
             <fieldset class="form-group">
-              <label>User Email</label> <input type="email"
-                                                 value="<c:out value='${user.email}' />" class="form-control"
-                                                 name="Email">
+              <label>Student Email</label> <input type="text"
+                                                 value="<c:out value='${StudentBean.email}' />" class="form-control"
+                                                 name="email">
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label>Student N_ID</label> <input type="text"
+                                                 value="<c:out value='${StudentBean.n_ID}' />" class="form-control"
+                                                 name="n_ID">
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label>Student Contacts</label> <input type="text"
+                                                 value="<c:out value='${StudentBean.contacts}' />" class="form-control"
+                                                 name="contacts">
             </fieldset>
 
 
             <fieldset class="form-group">
-              <label>User Cohort_ID</label> <input type="text"
-                                                 value="<c:out value='${user.cohort_ID}' />" class="form-control"
-                                                 name="Cohort_ID">
+              <label>Student Status</label> <input type="text"
+                                                 value="<c:out value='${StudentBean.status}' />" class="form-control"
+                                                 name="status">
             </fieldset>
 
-
             <fieldset class="form-group">
-              <label>User Course_ID</label> <input type="text"
-                                                 value="<c:out value='${user.course_ID}' />" class="form-control"
-                                                 name="Course_ID">
+              <label>Student Course_ID</label> <select name="course_ID" class="form-control">
+                                                    <c:forEach items ="${courses}" var ="courses">
+                                                             <option value='${courses.course_ID}'/>${courses.course_ID}
+                                                       <c:if test=" ${courses.course_ID eq StudentBean.course_ID}">
+                                                         selected ="selected"
+                                                       </c:if>
+
+                                                      </option>
+                                                </c:forEach>
+                                                </select>
+
+
             </fieldset>
 
-
             <fieldset class="form-group">
-              <label>User N_ID</label> <input type="text"
-                                                 value="<c:out value='${user.n_ID}' />" class="form-control"
-                                                 name="N_ID">
+              <label>Student Cohort_ID</label> <input type="text"
+                                                      value="<c:out value='${StudentBean.cohort_ID}' />" class="form-control"
+                                                      name="cohort_ID">
             </fieldset>
 
-
             <fieldset class="form-group">
-              <label>User Contacts</label> <input type="text"
-                                                 value="<c:out value='${user.contacts}' />" class="form-control"
-                                                 name="Contacts">
-            </fieldset>
-
-
-            <fieldset class="form-group">
-              <label>User Status</label> <input type="text"
-                                                 value="<c:out value='${user.status}' />" class="form-control"
-                                                 name="Status">
-            </fieldset>
-
-
-            <fieldset class="form-group">
-              <label>User Type</label> <input type="text"
-                                                 value="<c:out value='${user.type}' />" class="form-control"
-                                                 name="Type">
+              <label>Student Type</label> <input type="text"
+                                                 value="<c:out value='${StudentBean.type}' />" class="form-control"
+                                                 name="type">
             </fieldset>
 
 

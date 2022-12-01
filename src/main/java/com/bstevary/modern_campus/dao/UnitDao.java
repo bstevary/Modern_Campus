@@ -1,93 +1,97 @@
 package com.bstevary.modern_campus.dao;
 
+import com.bstevary.modern_campus.beans.RegistrationBean;
 import com.bstevary.modern_campus.beans.UnitBean;
 import com.bstevary.modern_campus.config.Database;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UnitDao {
+Database database;
+String SELECT_ALL_USERS, INSERT_NEW_UNIT_SQL,UPDATE_UNIT_SQL,DELETE_UNIT_SQL;
+public void addUnit(UnitBean newUnit)throws SQLException{
+                   try (Connection connection = database.getConnection();
+                     PreparedStatement preparedStatement = connection.prepareStatement(INSERT_NEW_UNIT_SQL)) {
+                    preparedStatement.setString(1, newUnit.getUnit_ID());
+                    preparedStatement.setString(2, newUnit.getCode_Name());
+                    preparedStatement.setString(3,newUnit.getInstructor());
+                    preparedStatement.setDouble(4,newUnit.getCost());
+                    preparedStatement.setString(5, newUnit.getDept_ID());
+                    preparedStatement.setString(6, newUnit.getDescriptions());
+                    System.out.println(preparedStatement);
+                    preparedStatement.executeUpdate();
 
-
-
-    Database database;
-    public Connection registerUnits(){
-        Connection connection=database.getConnection();
-        try{
-            Statement st1=connection.createStatement();
-            Statement st6=connection.createStatement();
-            Statement st7=connection.createStatement();
-            Statement st8=connection.createStatement();
-
-            ResultSet rs1=st1.executeQuery("SELECT * FROM units WHERE Unit_ID NOT IN(SELECT Unit_ID FROM student_enrollment)");
-            ResultSet rs6=st6.executeQuery("SELECT * FROM term WHERE Term_ID='T1'");
-            ResultSet rs7=st7.executeQuery("SELECT * FROM student WHERE F_Name='Mohammed'");
-
-
-
-            while(rs1.next()){
-                while(rs6.next()) {
-                    while (rs7.next()) {
-                        String Reg_No = rs7.getString("Reg_No");
-                        String Unit_ID = rs1.getString("Unit_ID");
-                        String Term_ID = rs6.getString("Term_ID");
-
-                        UnitBean user = new UnitBean(Reg_No, Unit_ID, Term_ID);
-
-                        String sql="INSERT INTO student_enrollment(Row_ID, Reg_No, Unit_ID, Term_ID)" + "VALUES (?, ?, ?, ?)";
-
-                        PreparedStatement statement=connection.prepareStatement(sql);
-                        statement.setString(1, "C11");
-                       // statement.setString(2, user.Reg_No);
-                       // statement.setString(3, user.Unit_ID);
-                        //statement.setString(4, user.Term_ID);
-                        statement.executeUpdate();
-
-                    }
+                } catch (SQLException e) {
+                    printSQLException(e);
                 }
-            }
-            connection.close();
+
+    }
+    public boolean updateUnit(UnitBean unit) throws SQLException {
+        boolean rowUpdated;
+        try (Connection connection = database.getConnection();
+             PreparedStatement statement = connection.prepareStatement(UPDATE_UNIT_SQL);) {
+            System.out.println("updated USer:"+statement);
+
+            statement.setString(1, unit.getUnit_ID());
+            statement.setString(2, unit.getCode_Name());
+            statement.setString(3, unit.getInstructor());
+            statement.setDouble(4, unit.getCost());
+            statement.setString(5, unit.getDept_ID());
+            statement.setString(6, unit.getDescriptions());
 
 
-        } catch (Exception e) {
-            e.printStackTrace();
+            rowUpdated = statement.executeUpdate() > 0;
         }
-        return connection;
+        return rowUpdated;
+    }
+    public boolean deleteUnit(String Unit_ID) throws SQLException {
+        boolean rowDeleted;
+        try (Connection connection = database.getConnection();
+             PreparedStatement statement = connection.prepareStatement(DELETE_UNIT_SQL);) {
+            statement.setString(1,Unit_ID);
+            rowDeleted = statement.executeUpdate() > 0;
+        }
+        return rowDeleted;
+    }
+    public List<UnitBean> selectAllUnits() {
+        List<UnitBean> unitBeans = new ArrayList<>();
+        // Step 1: Establishing a Connection
+        try (Connection connection = database.getConnection();
+
+             // Step 2:Create a statement using connection object
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
+            System.out.println(preparedStatement);
+            // Step 3: Execute the query or update query
+            ResultSet rs = preparedStatement.executeQuery();
+
+            // Step 4: Process the ResultSet object.
+            while (rs.next()) {
+               //
+                String Unit_ID = rs.getString("Unit_ID");
+                String Code_Name = rs.getString("Code_Name");
+                String Instructor = rs.getString("Instructor");
+                double Cost = rs.getDouble("Cost");
+                String Dept_ID = rs.getString("Dept_ID");
+                String Descriptions = rs.getString("Descriptions");
+                unitBeans.add(new UnitBean(Unit_ID, Code_Name, Instructor , Dept_ID, Descriptions,Cost));
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return unitBeans;
+    }
+    private void printSQLException(SQLException e) {
+
     }
 
+    public boolean registerOneUnit(RegistrationBean units) throws SQLException{
 
-    //CHECKS ON THE STATUS OF THE UNITS FOR A SPECIFIC STUDENT AND UNIT
-    //input = unit_id_ and reg no. obtained from user input
-    public String unitRegistrationStatus ( String unit_id_, String reg_No){
-        String unitStatus = "pending";
-        try {
-            Connection connection = database.getConnection();
-            String sql = " SELECT status FROM Student_Enrollment  WHERE unit_id=? AND student_reg_no =?  ";
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1,unit_id_ );
-            preparedStatement.setString(2, reg_No);
 
-            ResultSet resultSet = preparedStatement.executeQuery();
-
-            while (resultSet.next()){
-                String Current_Status = resultSet.getString("status");
-
-                unitStatus = Current_Status;
-                System.out.println( "Unit Id "+ unit_id_ +" for student " + reg_No+" is "+ Current_Status);
-            }
-            connection.close();
-            connection.close();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return unitStatus;
+        return false;
     }
-
-
-
 
 
 }
+

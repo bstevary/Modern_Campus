@@ -5,6 +5,11 @@ public class Person {
 
     String  F_Name, S_Name, L_Name,  Email,  N_ID, Contacts, Status ;
 
+    public Person(String email, String contacts) {
+        Email = email;
+        Contacts = contacts;
+    }
+
     public String getF_Name() {
         return F_Name;
     }

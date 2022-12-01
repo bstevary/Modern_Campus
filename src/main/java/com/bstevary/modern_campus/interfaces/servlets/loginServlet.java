@@ -16,27 +16,27 @@ import java.io.IOException;
 public class loginServlet extends HttpServlet {
       @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-        String UserName = request.getParameter("UserName").toUpperCase();
+        String UserName = request.getParameter("userName").toUpperCase();
         String Password = request.getParameter("Password");
 
 
 
-        loginBean loginBean = new loginBean();
-        loginBean.setUsername(UserName);
-        loginBean.setPassword(Password);
+          loginBean loginBean = new loginBean();
+          loginBean.setUsername(UserName);
+          loginBean.setPassword(Password);
 
 
-          Database database =new Database();
-        LoginDao loginDao= new LoginDao(database);
+
+          LoginDao loginDao = new LoginDao();
 
         if (UserName.startsWith("PF")){
             if(loginDao.validateStaff(loginBean))
             {
                 request.setAttribute("status","success");
                 HttpSession session = request.getSession();
-                session.setAttribute("UserName",UserName);
+                session.setAttribute("userName",UserName);
 
-                response.sendRedirect("staff/index.html");
+                response.sendRedirect("staff/admin/index.jsp");
             }
             else
             {
@@ -49,13 +49,12 @@ public class loginServlet extends HttpServlet {
             System.out.println("students");
             if(loginDao.validateStudent(loginBean))
             {
-                //append session.setAttribute("list", list);
                 HttpSession session = request.getSession();
                 request.setAttribute("status","success");
 
-                session.setAttribute("UserName",UserName);
+                session.setAttribute("userName",UserName);
 
-                response.sendRedirect("student/index.html");
+                response.sendRedirect("StudentSRV/index.jsp");
             }
             else
             {

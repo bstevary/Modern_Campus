@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand-md navbar-dark"
        style="background-color: blue">
     <div>
-      <a href="https://www.xadmin.net" class="navbar-brand"> Students
+      <a href="" class="navbar-brand"> Students
         Management  </a>
     </div>
 
@@ -42,19 +42,19 @@
     <table class="table table-bordered">
       <thead>
       <tr>
-        <th>N_ID</th>
-        <th>Reg_No</th>
 
+        <th>Reg_No</th>
         <th>F_Name</th>
         <th>S_Name</th>
         <th>L_Name</th>
-        <th>Contacts</th>
         <th>Email</th>
-
         <th>Cohort</th>
         <th>Course</th>
+        <th>N_ID</th>
+        <th>Contacts</th>
+        <th>Status</th>
         <th>Type</th>
-        <th>Action</th>
+       <th>Action</th>
 
 
       </tr>
@@ -68,9 +68,10 @@
           <td><c:out value="${user.f_Name}" /></td>
           <td><c:out value="${user.s_Name}" /></td>
           <td><c:out value="${user.l_Name}" /></td>
-           <td><c:out value="${user.email}" /></td>
+          <td><c:out value="${user.email}" /></td>
           <td><c:out value="${user.cohort_ID}" /></td>
           <td><c:out value="${user.course_ID}" /></td>
+          <td><c:out value="${user.n_ID}" /></td>
           <td><c:out value="${user.contacts}" /></td>
           <td><c:out value="${user.status}" /></td>
           <td><c:out value="${user.type}" /></td>

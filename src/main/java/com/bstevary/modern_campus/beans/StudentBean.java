@@ -3,6 +3,11 @@ package com.bstevary.modern_campus.beans;
 public class StudentBean extends Person {
     protected String Reg_No,Cohort_ID, Course_ID,Type;
 
+    public StudentBean( String email,  String contacts,  String reg_No) {
+        super( email,  contacts );
+        Reg_No = reg_No;
+    }
+
     public String getReg_No() {
         return Reg_No;
     }

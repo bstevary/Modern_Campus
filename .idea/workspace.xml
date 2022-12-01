@@ -10,47 +10,494 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc73d55-a671-4a5a-8eee-3309f0bb8271" name="Changes" comment="Integration part one not finished update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/privilleges/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/CodServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/DeanServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/RegistrarServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/css/style4staff.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/choose.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/full-image1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/home-icon-silhouette.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/resume.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/shutdown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/survey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/img/zoom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/staff/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/student/index.html" afterDir="false" />
+    <list default="true" id="7dc73d55-a671-4a5a-8eee-3309f0bb8271" name="Changes" comment="modules update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/RegistrationBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/RegistrationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/FinanceServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/StaffServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/StudentSRV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/finace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/css/home_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/font-awesome-old/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/js/home_script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/js/jquary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/pickadate/picker.date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/pickadate/picker.time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/summernote/summernote.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/algo-course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/algo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/c-course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/cn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/coaa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/compiler.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/d1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/data-algo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/data-course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/data.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/database.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/digital.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/gate-papers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/inorganic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/java-course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/javascript-course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/math.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/organic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/os.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/paper-download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/paper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/physical.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/physics.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/projects.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/python-course.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/courses/web-course.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/creator/humanNotExist1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/creator/humanNotExist2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/creator/humanNotExist3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/creator/humanNotExist4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/creator/roshan1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/creator/roshan2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/extra/animated.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/extra/b1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/extra/b2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/extra/b3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/extra/b4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/extra/backwallpaper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/extra/e3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/extra/quiz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/extra/svg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/books.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/brainbooster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/call.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/computer-courses.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/contactus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/discussion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/dropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/fb2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/insta.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/insta2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/lessthan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/location.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/logo - Copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/makeitfull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/menu-unchecked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/morethan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/online-tutorials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/p3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/papers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/portfolio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/product.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/q-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/q-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/q1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/right-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/services.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/team.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/tt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/tt2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icon/ytube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/projects/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/projects/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/projects/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/projects/p4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/projects/p5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/add-student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/all-students.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/edit-student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a054e4d9-567b-4b0e-96ae-4008f0c6087e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a054e4d9-567b-4b0e-96ae-4008f0c6087e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CourseBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CourseBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CurriculmBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/CurriculmBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/StudentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/StudentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/loginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/loginBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/beans/privilleges/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/controller/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/security/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/controller/RoleFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/CourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/CourseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/CurriculmDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/CurriculmDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/Fee_ReceiptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/Fee_ReceiptDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/StaffDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/StaffDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/TranscriptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/TranscriptDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/UnitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/dao/UnitDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/StudentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/SupperServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/SupperServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/interfaces/servlets/loginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bstevary/modern_campus/services/Student.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index4.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/css/style4staff.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/img/Carriculum.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/img/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/img/report.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/img/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/css/student_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/img/transcript.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/about-courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/about-courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/about-student.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/about-student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/add-courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/add-courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/add-departments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/add-departments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/add-fees.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/add-fees.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/add-holiday.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/add-library.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/add-professor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/add-professor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/add-staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/add-staff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/add-student.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/all-courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/all-courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/all-departments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/all-departments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/all-holiday.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/all-holiday.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/all-library.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/all-professors.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/all-professors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/all-staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/all-staff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/all-students.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/app-calender.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/app-profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/chart-chartist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/chart-chartjs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/chart-flot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/chart-morris.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/chart-peity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/chart-sparkline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/css/skin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/css/skin-2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/css/skin-3.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/css/skin-3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/css/skin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/css/skin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ecom-checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ecom-customers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ecom-invoice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ecom-product-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ecom-product-grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ecom-product-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ecom-product-order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/edit-courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/edit-courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/edit-departments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/edit-departments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/edit-holiday.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/edit-library.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/edit-professor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/edit-professor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/edit-staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/edit-staff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/edit-student.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/email-compose.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/email-compose.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/email-inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/email-inbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/email-read.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/email-read.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/event-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/event-management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/fees-collection.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/fees-collection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/fees-receipt.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/fees-receipt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/form-editor-summernote.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/form-element.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/form-pickers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/form-validation-jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/form-validation-jquery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/form-wizard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/holiday-calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/avasta/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/avasta/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/avasta/fonts/avasta.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/avasta/fonts/avasta.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/avasta/fonts/avasta.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/avasta/fonts/avasta.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/avasta/fonts/avasta.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/avasta/fonts/avasta.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/avasta/fonts/avasta.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/avasta/fonts/avasta.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/avasta/fonts/avasta.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/avasta/fonts/avasta.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/font-awesome-old/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/font-awesome-old/fonts/fontawesome-webfont3e6e.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/font-awesome-old/fonts/fontawesome-webfontd41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/font-awesome-old/fonts/fontawesome-webfontd41d.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/line-awesome/css/line-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/line-awesome/css/line-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/line-awesome/fonts/line-awesome-1.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/line-awesome/fonts/line-awesome-1.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/line-awesome/fonts/line-awesome.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/line-awesome/fonts/line-awesome.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/line-awesome/fonts/line-awesome.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/line-awesome/fonts/line-awesome.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/line-awesome/fonts/line-awesome.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/line-awesome/fonts/line-awesome.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/line-awesome/fonts/line-awesome.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/line-awesome/fonts/line-awesome.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/line-awesome/fonts/line-awesome.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/line-awesome/fonts/line-awesome.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/material-design-iconic-font/css/materialdesignicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/material-design-iconic-font/css/materialdesignicons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/material-design-iconic-font/fonts/materialdesignicons-webfont-1.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/material-design-iconic-font/fonts/materialdesignicons-webfont-1.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/simple-line-icons/css/simple-line-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/simple-line-icons/fonts/Simple-Line-Icons4c82.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/simple-line-icons/fonts/Simple-Line-Iconsd41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/simple-line-icons/fonts/Simple-Line-Iconsd41d.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/themify-icons/css/themify-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/themify-icons/css/themify-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/themify-icons/fonts/themify.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/themify-icons/fonts/themify.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/themify-icons/fonts/themify.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/themify-icons/fonts/themify.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/themify-icons/fonts/themify9f24.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/themify-icons/fonts/themify9f24.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/themify-icons/fonts/themify9f24.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/themify-icons/fonts/themify9f24.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/icons/themify-icons/fonts/themifyd41d.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/icons/themify-icons/fonts/themifyd41d.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/avatar/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/avatar/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/big/img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/big/img1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/big/img5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/big/img5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/big/img6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/big/img6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/big/img8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/big/img8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/card/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/card/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/card/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/card/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/card/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/card/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/courses/pic1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/courses/pic1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/courses/pic2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/courses/pic2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/courses/pic3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/courses/pic3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/courses/pic4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/courses/pic4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/courses/pic5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/courses/pic5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/courses/pic6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/courses/pic6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/courses/pic7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/courses/pic7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/courses/pic8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/courses/pic8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/icons/20.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/icons/20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/icons/21.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/icons/21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/icons/22.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/icons/22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/icons/23.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/icons/23.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/logo-text-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/logo-text-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/logo-white-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/logo-white-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/logo-white-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/logo-white-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/logo-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/logo-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/product/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/product/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/product/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/product/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/product/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/product/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/product/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/product/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/product/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/product/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/product/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/product/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/product/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/product/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/cover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/education/pic9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/education/pic9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/pic1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/pic1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/profile/small/pic9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/profile/small/pic9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/tab/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/tab/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/tab/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/tab/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/images/tab/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/tab/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/dashboard/dashboard-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/dashboard/dashboard-2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/dashboard/dashboard-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/dashboard/dashboard-3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/dashboard/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/dlabnav-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/dlabnav-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/bs-daterange-picker-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/bs-daterange-picker-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/chartist-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/chartist-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/chartjs-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/chartjs-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/clock-picker-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/clock-picker-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/datatables.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/datatables.init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/flot-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/flot-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/fullcalendar-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/fullcalendar-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/jquery-asColorPicker.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/jquery-asColorPicker.init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/jquery-steps-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/jquery-steps-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/jquery.validate-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/jquery.validate-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/jqvmap-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/jqvmap-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/material-date-picker-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/material-date-picker-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/morris-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/morris-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/nestable-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/nestable-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/nouislider-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/nouislider-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/pickadate-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/pickadate-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/piety-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/piety-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/select2-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/select2-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/sparkline-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/sparkline-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/summernote-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/summernote-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/sweetalert.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/sweetalert.init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/toastr-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/toastr-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/plugins-init/widgets-script-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/js/plugins-init/widgets-script-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/js/styleSwitcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/map-jqvmap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/map-jqvmap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/page-error-400.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page-error-400.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/page-error-403.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page-error-403.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/page-error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page-error-404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/page-error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page-error-500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/page-error-503.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page-error-503.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/page-forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page-forgot-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/page-lock-screen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page-lock-screen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/page-login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/page-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/professor-profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/staff-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/admin/staff-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/table-bootstrap-basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/table-datatable-basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/uc-nestable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/uc-noui-slider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/uc-select2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/uc-sweetalert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/uc-toastr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-accordion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-alert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-badge.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-button-group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-card.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-dropdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-list-group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-media-object.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-popover.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-progressbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-tab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/ui-typography.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/amcharts/amcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/amcharts/amcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/amcharts/ammap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/amcharts/ammap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/amcharts/amstock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/amcharts/amstock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/amcharts/pie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/amcharts/pie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/amcharts/plugins/dataloader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/amcharts/plugins/dataloader.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/amcharts/plugins/export.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/amcharts/plugins/export.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/amcharts/serial.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/amcharts/serial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/amcharts/worldLow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/amcharts/worldLow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/animate/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/animate/animate.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/aos/css/aos.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/aos/css/aos.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/bootstrap-daterangepicker/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/bootstrap-daterangepicker/daterangepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/bootstrap-daterangepicker/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/bootstrap-daterangepicker/daterangepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/bootstrap-select/dist/js/bootstrap-select.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/chart.js/Chart.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/chart.js/Chart.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/chartist/css/chartist.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/chartist/css/chartist.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/chartist/js/chartist.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/chartist/js/chartist.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/clockpicker/css/bootstrap-clockpicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/clockpicker/css/bootstrap-clockpicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/clockpicker/js/bootstrap-clockpicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/clockpicker/js/bootstrap-clockpicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/datatables/css/jquery.dataTables.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/datatables/images/sort_asc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/datatables/images/sort_asc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/datatables/images/sort_asc_disabled.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/datatables/images/sort_both.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/datatables/images/sort_both.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/datatables/images/sort_desc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/datatables/images/sort_desc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/datatables/images/sort_desc_disabled.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/datatables/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/flot-spline/jquery.flot.spline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/flot-spline/jquery.flot.spline.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/flot/jquery.flot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/flot/jquery.flot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/flot/jquery.flot.pie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/flot/jquery.flot.pie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/flot/jquery.flot.resize.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/flot/jquery.flot.resize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/fullcalendar/css/fullcalendar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/fullcalendar/css/fullcalendar.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/fullcalendar/js/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/fullcalendar/js/fullcalendar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/global/global.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/global/global.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/highlightjs/highlight.pack.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/highlightjs/highlight.pack.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-asColor/jquery-asColor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-asColor/jquery-asColor.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-asColorPicker/css/asColorPicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-asColorPicker/css/asColorPicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-asColorPicker/images/alpha.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-asColorPicker/images/alpha.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-asColorPicker/images/hue.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-asColorPicker/images/hue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-asColorPicker/images/saturation.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-asColorPicker/images/saturation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-asColorPicker/images/transparent.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-asColorPicker/images/transparent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-asGradient/jquery-asGradient.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-asGradient/jquery-asGradient.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-sparkline/jquery.sparkline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-sparkline/jquery.sparkline.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-steps/build/jquery.steps.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-steps/build/jquery.steps.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-steps/css/jquery.steps.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-steps/css/jquery.steps.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jquery-validation/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jquery-validation/jquery.validate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jqueryui/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jqueryui/js/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jqvmap/css/jqvmap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jqvmap/css/jqvmap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jqvmap/js/jquery.vmap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jqvmap/js/jquery.vmap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jqvmap/js/jquery.vmap.usa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jqvmap/js/jquery.vmap.usa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/jqvmap/js/jquery.vmap.world.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/jqvmap/js/jquery.vmap.world.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/metismenu/css/metisMenu.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/metismenu/css/metisMenu.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/moment/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/moment/moment.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/morris/morris.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/morris/morris.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/nestable2/css/jquery.nestable.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/nestable2/css/jquery.nestable.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/nestable2/js/jquery.nestable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/nestable2/js/jquery.nestable.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/nouislider/nouislider.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/nouislider/nouislider.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/nouislider/nouislider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/nouislider/nouislider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/peity/jquery.peity.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/peity/jquery.peity.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/perfect-scrollbar/css/perfect-scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/perfect-scrollbar/css/perfect-scrollbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/pickadate/picker.date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/pickadate/picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/pickadate/picker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/pickadate/picker.time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/pickadate/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/pickadate/themes/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/pickadate/themes/default.date.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/pickadate/themes/default.date.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/raphael/raphael.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/raphael/raphael.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/select2/css/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/select2/css/select2.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/select2/js/select2.full.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/select2/js/select2.full.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/summernote/font/summernote.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/summernote/font/summernote.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/summernote/font/summernote.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/summernote/font/summernote.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/summernote/font/summernote.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/summernote/font/summernote.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/summernote/js/summernote.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/summernote/js/summernote.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/summernote/summernote.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/svganimation/svg.animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/svganimation/svg.animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/svganimation/vivus.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/svganimation/vivus.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/sweetalert2/dist/sweetalert2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/sweetalert2/dist/sweetalert2.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/sweetalert2/dist/sweetalert2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/sweetalert2/dist/sweetalert2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/toastr/css/toastr.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/toastr/css/toastr.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/toastr/js/toastr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/toastr/js/toastr.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/vendor/wnumb/wNumb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/vendor/wnumb/wNumb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/injections/temp/widget-basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/all/txt.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index4.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/staff/staff.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff/staff.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/staff/user-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/staff/user-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/Carriculum.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/Carriculum.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/report.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/report.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/transcript.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/all/img/transcript.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/staff/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/staff/staff.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/student.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user-list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +510,7 @@
         <option value="Interface" />
         <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -83,6 +531,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/user-form.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/user-list.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
@@ -103,48 +552,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/bstevary/Documents/git/github/private/ideas/Modern_Campus/src/main/webapp/student",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bstevary/Documents/git/github/private/ideas/Modern_Campus/src/main/webapp&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PLAIN_TEXT"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.bstevary.modern_campus.services.login" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/student" />
       <recent name="$PROJECT_DIR$/src/main/webapp/staff" />
       <recent name="$PROJECT_DIR$/src/main/webapp/all" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/all/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/all/img" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/all/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/staff" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/all/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/all/images" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/all/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/all" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
@@ -208,6 +657,28 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Modern_Campus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modern_Campus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.bstevary.modern_campus.beans in Modern_Campus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modern_Campus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bstevary.modern_campus.beans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bstevary.modern_campus.beans" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -396,8 +867,16 @@
     </configuration>
     <list>
       <item itemvalue="GlassFish Server.ClassFish" />
+      <item itemvalue="JUnit.All in Modern_Campus" />
+      <item itemvalue="JUnit.com.bstevary.modern_campus.beans in Modern_Campus" />
       <item itemvalue="Tomcat Server.Tomcat" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.com.bstevary.modern_campus.beans in Modern_Campus" />
+        <item itemvalue="JUnit.All in Modern_Campus" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -424,7 +903,23 @@
       <workItem from="1668450025843" duration="1965000" />
       <workItem from="1668452671575" duration="4570000" />
       <workItem from="1668482174860" duration="64617000" />
-      <workItem from="1668576726533" duration="11525000" />
+      <workItem from="1668576726533" duration="15834000" />
+      <workItem from="1668616797381" duration="203000" />
+      <workItem from="1668618685925" duration="4357000" />
+      <workItem from="1668661356225" duration="27879000" />
+      <workItem from="1668759238165" duration="13092000" />
+      <workItem from="1668793622928" duration="615000" />
+      <workItem from="1668957427168" duration="7064000" />
+      <workItem from="1669014657195" duration="4836000" />
+      <workItem from="1669130835023" duration="21385000" />
+      <workItem from="1669155441774" duration="255000" />
+      <workItem from="1669182477430" duration="14331000" />
+      <workItem from="1669231473671" duration="6131000" />
+      <workItem from="1669292781430" duration="1819000" />
+      <workItem from="1669361959402" duration="17000" />
+      <workItem from="1669378366586" duration="651000" />
+      <workItem from="1669533312567" duration="942000" />
+      <workItem from="1669787960647" duration="36500000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;Refactor to appreciate beans injection in microservices">
       <created>1668410700081</created>
@@ -454,7 +949,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668574516945</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Integration part two not finished update">
+      <created>1668588996809</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668588996809</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +978,9 @@
     <MESSAGE value="&#10;Refactor to appreciate beans injection in microservices" />
     <MESSAGE value="&#10;login  working and authentication solved" />
     <MESSAGE value="Integration part one not finished update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integration part one not finished update" />
+    <MESSAGE value="Integration part two not finished update" />
+    <MESSAGE value="modules update" />
+    <option name="LAST_COMMIT_MESSAGE" value="modules update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

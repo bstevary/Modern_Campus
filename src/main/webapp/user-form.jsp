@@ -56,80 +56,79 @@
           </caption>
 
           <c:if test="${user != null}">
-            <input type="hidden" name="id" value="<c:out value='${user.reg_No}' />" />
+            <input type="hidden" name="Reg_No" value="<c:out value='${user.reg_No}' />" />
           </c:if>
+            <fieldset class="form-group">
+              <label>User F_Name</label> <input type="text"
+                                                value="<c:out value='${user.f_Name}' />" class="form-control"
+                                                name="Reg_No" required="required">
+            </fieldset>
 
           <fieldset class="form-group">
-            <label>User Name</label> <input type="text"
+            <label>User F_Name</label> <input type="text"
                                             value="<c:out value='${user.f_Name}' />" class="form-control"
-                                            name="f_Name" required="required">
+                                            name="F_Name" required="required">
           </fieldset>
 
           <fieldset class="form-group">
-            <label>User Email</label> <input type="text"
+            <label>User S_Name</label> <input type="text"
                                              value="<c:out value='${user.s_Name}' />" class="form-control"
-                                             name="s_Name">
+                                             name="S_Name">
           </fieldset>
 
           <fieldset class="form-group">
-            <label>User Country</label> <input type="text"
+            <label>User L_Name</label> <input type="text"
                                                value="<c:out value='${user.l_Name}' />" class="form-control"
-                                               name="l_Name">
+                                               name="L_Name">
           </fieldset>
 
-            <fieldset class="form-group">
-              <label>User Country</label> <input type="date"
-                                                 value="<c:out value='${user.d_O_B}' />" class="form-control"
-                                                 name="d_O_B">
-            </fieldset>
-
 
             <fieldset class="form-group">
-              <label>User Country</label> <input type="email"
+              <label>User Email</label> <input type="email"
                                                  value="<c:out value='${user.email}' />" class="form-control"
-                                                 name="email">
+                                                 name="Email">
             </fieldset>
 
 
             <fieldset class="form-group">
-              <label>User Country</label> <input type="text"
+              <label>User Cohort_ID</label> <input type="text"
                                                  value="<c:out value='${user.cohort_ID}' />" class="form-control"
-                                                 name="cohort_ID">
+                                                 name="Cohort_ID">
             </fieldset>
 
 
             <fieldset class="form-group">
-              <label>User Country</label> <input type="text"
+              <label>User Course_ID</label> <input type="text"
                                                  value="<c:out value='${user.course_ID}' />" class="form-control"
-                                                 name="course_ID">
+                                                 name="Course_ID">
             </fieldset>
 
 
             <fieldset class="form-group">
-              <label>User Country</label> <input type="text"
+              <label>User N_ID</label> <input type="text"
                                                  value="<c:out value='${user.n_ID}' />" class="form-control"
-                                                 name="n_ID">
+                                                 name="N_ID">
             </fieldset>
 
 
             <fieldset class="form-group">
-              <label>User Country</label> <input type="text"
+              <label>User Contacts</label> <input type="text"
                                                  value="<c:out value='${user.contacts}' />" class="form-control"
-                                                 name="contacts">
+                                                 name="Contacts">
             </fieldset>
 
 
             <fieldset class="form-group">
-              <label>User Country</label> <input type="text"
+              <label>User Status</label> <input type="text"
                                                  value="<c:out value='${user.status}' />" class="form-control"
-                                                 name="status">
+                                                 name="Status">
             </fieldset>
 
 
             <fieldset class="form-group">
-              <label>User Country</label> <input type="text"
+              <label>User Type</label> <input type="text"
                                                  value="<c:out value='${user.type}' />" class="form-control"
-                                                 name="type">
+                                                 name="Type">
             </fieldset>
 
 

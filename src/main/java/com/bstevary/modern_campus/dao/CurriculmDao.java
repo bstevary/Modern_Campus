@@ -1,7 +1,6 @@
 package com.bstevary.modern_campus.dao;
 
 import com.bstevary.modern_campus.beans.CurriculmBean;
-import com.bstevary.modern_campus.beans.UnitBean;
 import com.bstevary.modern_campus.config.Database;
 
 import java.sql.Connection;
@@ -13,21 +12,22 @@ public class CurriculmDao {
     Database database;
     //ALFRED
     //getting of units ( Curriculum view for a student )
-    public Connection getUnits() throws SQLException {
+    public CurriculmBean curriculum(String Reg_No) throws SQLException {
         Connection connection=database.getConnection();
+        CurriculmBean curriculmBean= null;
 
         try{
             Statement st=connection.createStatement();
-            ResultSet rs=st.executeQuery("SELECT * FROM units");
+            ResultSet rs=st.executeQuery("SELECT * FROM Caricullum");
 
 
             while(rs.next()){
-                String Unit_ID=rs.getString("Unit_ID");
-                String Code_Name=rs.getString("Code_Name");
-                String Instructor=rs.getString("Instructor");
-                double Cost=rs.getDouble("Cost");
+                String Unit_ID=rs.getString("Caricullum_ID");
+                String Code_Name=rs.getString("Semester");
+                String Instructor=rs.getString("Yrs_O_Stdy");
+                double Cost=rs.getDouble("Unit_ID");
 
-               // UnitBean user=new CurriculmBean(Unit_ID, Code_Name, Instructor, Cost);
+               curriculmBean =new CurriculmBean(Unit_ID, Code_Name, Instructor, Unit_ID);
 
             }
             connection.close();
@@ -36,7 +36,7 @@ public class CurriculmDao {
         }catch(Exception e){
             e.printStackTrace();
         }
-        return connection;
+        return curriculmBean;
     }
 
 

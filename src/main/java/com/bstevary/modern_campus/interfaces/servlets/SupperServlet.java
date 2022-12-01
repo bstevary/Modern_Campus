@@ -84,7 +84,6 @@ public class SupperServlet extends HttpServlet {
         String F_Name = request.getParameter("F_Name");
         String S_Name = request.getParameter("S_Name");
         String L_Name = request.getParameter("L_Name");
-        String D_O_B = request.getParameter("D_O_B");
         String Email = request.getParameter("Email");
         String Cohort_ID = request.getParameter("Cohort_ID");
         String Course_ID = request.getParameter("Course_ID");
@@ -92,7 +91,7 @@ public class SupperServlet extends HttpServlet {
         String Contacts = request.getParameter("Contacts");
         String Status = request.getParameter("Status");
         String Type = request.getParameter("Type");
-        StudentBean newUser = new StudentBean(Reg_No, F_Name, S_Name, L_Name, D_O_B, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type);
+        StudentBean newUser = new StudentBean(Reg_No, F_Name, S_Name, L_Name, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type);
         user.insertUser(newUser);
         response.sendRedirect("list");
     }
@@ -103,7 +102,6 @@ public class SupperServlet extends HttpServlet {
         String F_Name = request.getParameter("F_Name");
         String S_Name = request.getParameter("S_Name");
         String L_Name = request.getParameter("L_Name");
-        String D_O_B = request.getParameter("D_O_B");
         String Email = request.getParameter("Email");
         String Cohort_ID = request.getParameter("Cohort_ID");
         String Course_ID = request.getParameter("Course_ID");
@@ -111,7 +109,7 @@ public class SupperServlet extends HttpServlet {
         String Contacts = request.getParameter("Contacts");
         String Status = request.getParameter("Status");
         String Type = request.getParameter("Type");
-        StudentBean modifiedUser = new StudentBean(Reg_No, F_Name, S_Name, L_Name, D_O_B, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type);
+        StudentBean modifiedUser = new StudentBean(Reg_No, F_Name, S_Name, L_Name, Email, Cohort_ID, Course_ID, N_ID, Contacts, Status, Type);
         user.updateUser(modifiedUser);
         response.sendRedirect("list");
     }
